@@ -117,6 +117,7 @@ a:hover {
 }
 
 .text-objetivo {
+    text-align: center;
     margin: 30px 0 50px;
 }
 
@@ -156,8 +157,11 @@ a:hover {
 
 .overlay h2 {
     margin: 0;
+    font-size: 25px;
 }
 
 .card:hover {
     scale: 1.1;
 }
+/*********************** fim segunda pagina ***********************/
+
