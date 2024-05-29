@@ -53,9 +53,24 @@ a:hover {
     align-items: center;
 }
 
-.principal-page h1 {
-    color: var(--color-light);
-    font-size: 4vmin;
+#artext {
+    font-size: 60px;
+    background: linear-gradient(to left, #001f3f 0%, 
+    #0074D9 20%, 
+    #00BFFF 40%, 
+    #40E0D0 60%, 
+    #00FFFF 70%, 
+    #008080 80%, 
+    #20B2AA 90%, 
+    #00CED1 100%);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animeted 5s linear infinite;
+}
+
+@keyframes animeted {
+    to{background-position-x: 161px ;}
 }
 
 /* .principal-page ul {
@@ -164,4 +179,47 @@ a:hover {
     scale: 1.1;
 }
 /*********************** fim segunda pagina ***********************/
+/*********************** terceira pagina ***********************/
 
+.solucao-oceana {
+    text-align: center;
+    padding: 80px;
+    margin: 0 auto;
+}
+
+.solucao-oceana h1 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.solucao-oceana p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.solucoes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.solucao {
+    flex: 1;
+    margin: 20px;
+    max-width: 300px;
+}
+
+.solucao img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.solucao h2 {
+    color: #007BFF;
+    margin: 10px 0;
+}
+
+.solucao p {
+    color: #666;
+}
