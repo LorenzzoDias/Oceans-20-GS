@@ -4,6 +4,7 @@
     --color-blue: #0000ff;
     --transition: .5s;
     --font-body: "Poppins", sans-serif;
+    --color-text: #007BFF;
 }
 
 * {
@@ -73,12 +74,6 @@ a:hover {
     to{background-position-x: 161px ;}
 }
 
-/* .principal-page ul {
-    display: flex;
-    gap:30px;
-    justify-content: center;
-} */
-
 .botao {
     display: flex;
     flex-wrap: wrap;
@@ -92,7 +87,7 @@ a:hover {
 /*********************** principal ***********************/
 .principal {
     width: 100%;
-    height: calc(100vh - 100px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,47 +131,67 @@ a:hover {
     margin: 30px 0 50px;
 }
 
+.cards {
+    background-image: linear-gradient( to top, rgba(0, 0, 0, .8), 
+    rgba(0, 0, 0, .3)),
+    url(../images/reciclagem\ card.jpg); ;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
 .cards-container {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap; 
     justify-content: center;
+    gap: 20px;
 }
 
 .card {
+    position: relative;
     width: 300px;
     height: 300px;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
     overflow: hidden;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .overlay {
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     height: 100%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    opacity: 0;
+    transition: 0.5s ease;
+    border-radius: 15px;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.text {
     color: white;
     font-size: 24px;
     font-weight: bold;
-}
-
-.overlay h2 {
-    margin: 0;
-    font-size: 25px;
-}
-
-.card:hover {
-    scale: 1.1;
+    text-align: center;
 }
 /*********************** fim segunda pagina ***********************/
 /*********************** terceira pagina ***********************/
@@ -188,7 +203,7 @@ a:hover {
 }
 
 .solucao-oceana h1 {
-    color: #007BFF;
+    color:var(--color-text);
     margin-bottom: 10px;
 }
 
@@ -216,10 +231,79 @@ a:hover {
 }
 
 .solucao h2 {
-    color: #007BFF;
+    color:var(--color-text);
     margin: 10px 0;
 }
 
 .solucao p {
     color: #666;
+}
+
+/*********************** fim terceira pagina ***********************/
+/*********************** quarta pagina ***********************/
+
+.cont {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-text);
+}
+
+.event-list {
+    margin-top: 20px;
+}
+
+.event {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-text);
+}
+
+.event-date span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.event-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.event-details h2 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.event-details p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.details-button {
+    background-color: var(--color-text);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: px;
+    cursor: pointer;
+}
+
+.details-button:hover {
+    background-color: #005bb5;
 }

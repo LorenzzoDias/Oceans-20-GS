@@ -1,7 +1,11 @@
-function showDescription(card) {
-    card.querySelector('.description').style.display = 'block';
+function showDetails() {
+    alert("Em breve");
 }
 
-function hideDescription(card) {
-    card.querySelector('.description').style.display = 'none';
+function volunteer() {
+    alert("Parabéns, você se voluntariou!");
+}
+
+function juntos() {
+    alert("Eba, que bom que se juntou a nós!");
 }
