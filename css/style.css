@@ -32,6 +32,7 @@ a:hover {
     color: var(--color-blue);
 }
 
+
 /*********************** principal-page ***********************/
 
 .container {
@@ -129,6 +130,10 @@ a:hover {
 .text-objetivo {
     text-align: center;
     margin: 30px 0 50px;
+}
+
+.text-objetivo h2 {
+    color: var(--color-text);
 }
 
 .cards {
@@ -307,3 +312,4 @@ h1 {
 .details-button:hover {
     background-color: #005bb5;
 }
+
