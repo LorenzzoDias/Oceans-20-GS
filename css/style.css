@@ -32,6 +32,7 @@ a:hover {
     color: var(--color-blue);
 }
 
+
 /*********************** principal-page ***********************/
 header {
     display: flex;
@@ -144,19 +145,30 @@ video {
     }
 }
 /*********************** fim principal ***********************/
-.cont {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 30px;
+.sobre-nos {
+    text-align: center;
+    padding: 60px;
+    margin: 0 auto;
 }
-.text {
-    margin-left: 20px; /* Espaço entre a imagem e o texto */
+
+#artext {
+    font-size: 60px;
+    background: linear-gradient(to left, #001f3f 0%, 
+    #0074D9 20%, 
+    #00BFFF 40%, 
+    #40E0D0 60%, 
+    #00FFFF 70%, 
+    #008080 80%, 
+    #20B2AA 90%, 
+    #00CED1 100%);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animeted 5s linear infinite;
 }
-img {
-    width: 400px;
-    height: auto;
-    border-radius: 10px;
+
+@keyframes animeted {
+    to{background-position-x: 161px ;}
 }
 
 /*********************** fim segunda pagina ***********************/
