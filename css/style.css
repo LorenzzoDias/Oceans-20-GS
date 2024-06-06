@@ -199,11 +199,6 @@ video {
     background-color: var(--color-blue);
 }
 
-
-
-
-
-
 #artext {
     font-size: 60px;
     background: linear-gradient(to left, #001f3f 0%, 
@@ -226,7 +221,54 @@ video {
 
 /*********************** fim segunda pagina ***********************/
 /*********************** terceira pagina ***********************/
+.h4-prob {
+    margin: 10px 0;
+    text-align: center;
+}
+.cont-page3 {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.stat {
+    margin: 20px;
+}
+
+.icon {
+    font-size: 2rem;
+}
+
+.number {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.contentt {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.contentt p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+/*********************** fim terceira pagina ***********************/
+/*********************** quarta pagina ***********************/
 .solucao-oceana {
     text-align: center;
     padding: 80px;
@@ -270,8 +312,8 @@ video {
     color: #666;
 }
 
-/*********************** fim terceira pagina ***********************/
-/*********************** quarta pagina ***********************/
+/*********************** fim quarta pagina ***********************/
+/*********************** quinta pagina ***********************/
 
 .objetivo {
     min-height: 100vh;
@@ -351,9 +393,9 @@ video {
     text-align: center;
 }
 
-/*********************** fim quarta pagina ***********************/
-/*********************** quinta pagina ***********************/
-.container {
+/*********************** fim quinta pagina ***********************/
+/*********************** sexta pagina ***********************/
+.page5 {
     text-align: center;
     padding: 20px;
 }
@@ -381,3 +423,4 @@ video {
     margin-top: 10px;
     font-weight: bold;
 }
+/*********************** fim sexta pagina ***********************/
