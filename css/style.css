@@ -103,14 +103,6 @@ header h1 {
     align-items: center;
 }
 
-/* .botao {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    width: 100%;
-    justify-content: center;
-} */
-
 video {
     position: absolute;
     top: 0;
@@ -316,11 +308,6 @@ video {
     margin-top: 50px;
 }
 
-/*.solucoes {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}*/
 
 .solucao {
     flex: 1;
@@ -328,11 +315,7 @@ video {
     max-width: 300px;
 }
 
-/*.solucao img {
-    height: auto;
-    width: 400px;
 
-}*/
 
 .solucao img {
     width: 80%;
