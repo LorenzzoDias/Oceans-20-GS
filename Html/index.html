@@ -1,55 +1,106 @@
-<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeira Pagina</title>
     <!-- link css -->
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
-    <section class="hero">
-        <div class="container">
-            <video autoplay muted loop>
-                <source src="../images/video do mar .mp4" type="video/mp4">
-            </video>
+    <div class="container" style="max-width: 100%;">
+        <video autoplay muted loop>
+            <source src="../images/animaismarinhosfundo.mp4" alt="Vídeo do oceano" type="video/mp4">
+        </video>
         <header>
-            <h1>BeOcean</h1>
-            <nav>
-                <ul id="secoes">
-                    <li><a href="">Problema Abordado</a></li>
-                    <li><a href="">Nossa Solução</a></li>
-                    <li><a href="">Objetivos</a></li>
-                    <li><a href="">Nosso público</a></li>
-                    <li><a href="">Por quê nos escolher?</a></li>
-                    <li><a href="">BeOcean no seu Dia</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-xxl navbar-dark fixed-top header_principal">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/logo beocean.png" width="155" height="75" class="d-inline-block align-top" alt="">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+                        </ul>
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0" id="secoes">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#problema_menu">Problema Abordado
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#solucao_menu">Nossa Solução
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#objetivos">Objetivos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#publico">Nosso Público
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#beneficios_menu">Por quê nos escolher?
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#dia">BeOcean no seu Dia
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
+
         </header>
-            <div class="principal">
-                <h2>Salve os Oceanos: Junte-se a Nós!</h2>
-                <p>
-                    Junte-se a nós para proteger os oceanos e cuidar do meio ambiente.
-                    Sua ação faz toda a diferença.
+
+
+        <div class="principal">
+            <h2>Salve os Oceanos: Junte-se a Nós!</h2>
+            <p>
+                Junte-se a nós para proteger os oceanos e cuidar do meio ambiente.
+                Sua ação faz toda a diferença.
+            </p>
+            <a href="#sobrenos_menu" class="botao">Conheça a BeOcean</a>
+        </div>
+    </div>
+
+    <!-- segunda pagina -->
+    <section class="content-section" id="sobrenos_menu">
+        <div class="row">
+            <div class="image col-sm-12 col-xs-12 col-md-6">
+                <img src="../images/imagem da primeira page.jpg" alt="Beach Clean-up">
+            </div>
+            <div class="text col-sm-12 col-xs-12 col-md-6">
+                <h1 id="artext">BeOcean</h1>
+                <p class="p_sobre">
+                    A BeOcean é uma plataforma dedicada a unir voluntários e organizações para promover eventos em prol
+                    de um dos maiores tesouros da natureza: os oceanos. Junte-se a nós e, dependendo do seu perfil, crie
+                    eventos ou participe de iniciativas motivadas pelo desejo de proteger nossos mares. Seja um usuário
+                    ativo e faça a diferença!
                 </p>
-                <a href="" class="btn">Conheça a BeOcean</a>
             </div>
         </div>
     </section>
 
-    <!-- segunda pogina -->
-    <section class="content-section">
-        <div class="image">
-            <img src="../images/imagem da primeira page.jpg" alt="Beach Clean-up">
-        </div>
-        <div class="text">
-            <h1 id="artext">BeOcean</h1>
-            <p>A BeOcean é uma plataforma onde usuários interessados em cuidar dos oceanos e empresas possam se conectar por meio da criação de eventos pelas organizações e a possibilidade de se inscrever nos eventos, por parte dos voluntários de forma simples e funcional.</p>
-            <button>Saiba quem somos</button>
-        </div>
-    </section>
-    <!-- terceira pogina -->
-    <div class="h4-prob"><h4 id="artext">Problemas a Solucionar</h4></div>
+
+    <br><br><br><br>
+    <!-- terceira pagina -->
+    <div class="h4-prob" id="problema_menu">
+        <h4 id="artext">Problemas a Solucionar</h4>
+    </div>
     <div class="cont-page3">
         <div class="stats">
             <div class="stat">
@@ -68,69 +119,113 @@
                 <div class="label">DO NOSSO OXIGÊNIO VEM DO OCEANO</div>
             </div>
         </div>
-        <div class="contentt">
-            <p>O Oceano cobre mais de 70% do planeta. Ele é responsável por metade do oxigênio que respiramos e alimenta mais de 1/3 da população mundial.</p>
-            <p>Só no Brasil, chegamos a despejar 190 mil toneladas de resíduos por ano no mar e estamos transformando essa fonte de vida em um grande lixão.</p>
-            <p>Mas como um cardume, nos unimos a importantes ONGs para cuidar do maior ecossistema do planeta. Elas atuam com pesquisa, educação ambiental, proteção do ecossistema marinho e limpeza de praia.</p>
-            <p>Você escolhe quanto pode doar e a nossa plataforma vai enviar os recursos para as organizações continuarem o seu trabalho.</p>
-            <p>Nós apoiamos o Oceano. E Você?</p>
+        <div class="contentt text-center" style="padding: 7px;">
+            <p class=p_card>Os oceanos cobrem mais de 70% da superfície da Terra, gerando metade do oxigênio que
+                respiramos e sustentando mais de um terço da população mundial com alimento.</p>
+            <p class=p_card>No Brasil, despejamos cerca de 190 mil toneladas de resíduos no mar anualmente,
+                transformando esse precioso recurso em um grande depósito de lixo. Unimos forças com importantes ONGs
+                que se dedicam à pesquisa, educação ambiental, proteção dos ecossistemas marinhos e limpeza das praias.
+                Além disso unimos forças com voluntários ativos em nossa plataforma, para enfrentar o problema da falta
+                de comunicação entre empresas e voluntários.</p>
+            <p class=p_card>Que tal ser uma empresa parceira ou um voluntário ativo na BeOcean?</p>
         </div>
     </div>
-    <!-- quarta pogina -->
-    <section class="solucao-oceana">
-        <h1 id="artext">Nosso Objetivo</h1>
-        <p>A boa notícia é que nós ainda podemos recuperar a abundância dos oceanos. O site foi criada para
-            identificar colaboradores e ongs que queiram ajudar os oceanos</p>
-        <div class="solucoes">
-            <div class="solucao">
-                <img src="../images/lixo na praia .jpg" alt="Campanhas">
-                <h2>Campanhas</h2>
-                <p>Nós investimos nossos recursos em campanhas estratégicas, focadas em alcançar objetivos mensuráveis
-                    que ajudarão a proteger e restaurar a abundância dos oceanos em cada país em que estamos.</p>
-            </div>
-            <div class="solucao">
-                <img src="../images/colaboradores .jpg" alt="Colaboradores">
-                <h2>Colaboradores</h2>
-                <p>Os colaboradores desempenham um papel crucial na preservação ambiental e suas ações protegem
-                    ecossistemas e aumentam a conscientização sobre práticas sustentáveis, contribuindo para um planeta
-                    mais limpo e saudável..</p>
-            </div>
-            <div class="solucao">
-                <img src="../images/economia azul .jpeg" alt="Multidisciplinaridade e experiência">
-                <h2>Economia Azul</h2>
-                <p>O objetivo da Economia Azul é garantir que as atividades humanas nos oceanos sejam ecologicamente
-                    responsáveis, socialmente inclusivas e economicamente viáveis a longo prazo.</p>
+    <!-- quarta pagina -->
+
+    <br><br><br><br>
+
+    <section class="solucao-oceana" id="objetivos">
+        <h1 id="artext">Nosso Objetivo</h1><br>
+        <p>A boa notícia é que nós ainda podemos recuperar a abundância dos oceanos. <br>O site foi criada para
+            identificar colaboradores e ongs que queiram ajudar os oceanos</p><br>
+
+        <div class="">
+            <div class="row">
+                <div class="col solucao">
+                    <img src="../images/lixo na praia .jpg" class="rounded" alt="Campanhas"><br><br>
+                    <h2>Campanhas</h2>
+                    <p>Investimos nossos recursos em campanhas estratégicas, com foco em alcançar objetivos mensuráveis
+                        que ajudem a proteger e restaurar a abundância dos oceanos nos países em que atuamos.</p>
+
+                </div>
+                <div class="col solucao">
+                    <img src="../images/economia azul .jpeg" class="rounded" alt="Multidisciplinaridade e experiência"><br><br>
+                    <h2>Economia Azul</h2>
+                    <p>Queremos impulsionar a Economia Azul, incentivando atividades marítimas realizadas pela
+                        nossa população de forma sustentável, sem agredir os ecossistemas marinhos.</p>
+                </div>
+                <div class="col solucao">
+                    <img src="../images/colaboradores .jpg" class="rounded" alt="Colaboradores"><br><br>
+                    <h2>Colaboradores</h2>
+                    <p>A BeOcean reconhece a importância das organizações parceiras e dos voluntários ativos na
+                        manutenção
+                        das áreas oceânicas. Simplificar a conexão entre essas duas partes é essencial para alcançarmos
+                        nosso propósito.</p>
+
+                </div>
+
             </div>
         </div>
+
+
     </section>
-    <!-- quinta pogina -->
-    <div class="text-objetivo">
-        <h2 id="artext">NOSSA TECNOLOGIA:</h2>
-        <p>Nós da BeOcean fizemos o site pensado em dois grupos. As ONGs, onde elas podem criar uma conta no nosso site e criar eventos, mandar textos, videos e fotos
-            <br>Porem pensamos também nas pessoas que gostariam de ser voluntarios. Temos uma aba onde a pessoa pode se cadastrar para ser voluntario, participar de ONGs e eventos!</p>
+
+    <br><br><br><br>
+
+    <!-- quinta pagina -->
+    <div class="text-objetivo" id="solucao_menu">
+        <h2 id="artext">Nossa Solução:</h2>
+        <p class="text-center">
+            Cadastre-se em nosso site como voluntário ou empresa parceira e comece a promover eventos através da nossa
+            plataforma.<br>
+            Se você representa uma empresa, crie e divulgue seus eventos conosco. Se deseja ser voluntário, explore os
+            eventos <br>
+            disponíveis e participe das diversas iniciativas. Juntos, podemos fazer a diferença!
+        </p>
     </div>
     <div class="cards-container">
-        <div class="card" onclick="juntos()">
+        <div class="card">
+            <img src="../images/visibilidade e alcance.jpg" alt="Voluntário com lixo">
+            <div class="overlay">
+                <div class="text">Seja uma empresa parceira! Crie eventos, promova sua causa e conecte-se com
+                    voluntários na nossa plataforma!</div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../images/trabalho em equipe.jpeg" alt="Voluntários dando as mãos">
+            <div class="overlay">
+                <div class="text">Seja um voluntário ativo na BeOcean! Visualize as maiores campanhas e inscreva-se em
+                    eventos disponíveis em nossa plataforma!</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cards-container">
+        <div class="card">
             <img src="../images/voluntarie-se .jpg" alt="Voluntário com lixo">
             <div class="overlay">
                 <div class="text">JUNTE-SE A NÓS</div>
             </div>
         </div>
-        <div class="card" onclick="volunteer()">
+        <div class="card">
             <img src="../images/reciclagem card.jpg" alt="Voluntários dando as mãos">
             <div class="overlay">
                 <div class="text">VOLUNTARIE-SE</div>
             </div>
         </div>
     </div>
-    <script src="../JavaScript/script.js"></script>
-    <!-- sexta pogina -->
-    <div class="page5">
-        <h1 id="artext">Por Quê Nos Escolher?</h1>
+
+
+    <br><br><br><br>
+    <!-- sexta pagina -->
+    <div class="page5" id="beneficios_menu">
+        <h1 id="artext">O que podemos oferecer?</h1>
+        <br><br><br><br>
         <div class="topics">
             <div class="topic">
                 <img src="../images/limpando o mar.jpg" alt="sujeira no mar">
-                <p>Limpeza de Praias</p>
+                <p>Facilidade</p>
             </div>
             <div class="topic">
                 <img src="../images/campanhas.jpg" alt="campanhas">
@@ -146,10 +241,13 @@
             </div>
             <div class="topic">
                 <img src="../images/trabalho em equipe.jpeg" alt="trabalho em equipe de limpeza de praia">
-                <p>Trabalho em Equipe</p>
+                <p>Networking</p>
             </div>
         </div>
     </div>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </html>

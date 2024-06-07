@@ -3,7 +3,7 @@
     --color-dark: #000000;
     --color-blue: #0000ff;
     --transition: .5s;
-    --font-body: "Poppins", sans-serif;
+    --font-body: "Work Sans", sans-serif;
     --color-text: #007BFF;
 }
 
@@ -17,7 +17,8 @@ html {
     scroll-behavior: smooth;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
 
@@ -34,7 +35,8 @@ a:hover {
 
 
 /*********************** principal-page ***********************/
-header {
+
+.header_principal {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,6 +45,18 @@ header {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 25px;
+    color: #303030;
+    font-weight: 400;
+}
+
+.p_card {
+    font-size: 20px;
+    color: #303030;
+    font-weight: 400;
 }
 
 nav ul {
@@ -72,11 +86,9 @@ header h1 {
 }
 
 .container {
-    width: 100%;
-    height: 100vh;   
-    background-image: linear-gradient( to top, rgba(0, 0, 0, .8), 
-    rgba(0, 0, 0, .3)),
-    url(../images/video\ mar.mp4);
+    max-width: 100%;
+    max-height: 100vh; 
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)), url(../images/video\ mar.mp4);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -91,13 +103,13 @@ header h1 {
     align-items: center;
 }
 
-.botao {
+/* .botao {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     width: 100%;
     justify-content: center;
-}
+} */
 
 video {
     position: absolute;
@@ -108,6 +120,7 @@ video {
     object-fit: cover;
     z-index: -2;
 }
+
 /*********************** fim principal-page ***********************/
 
 /*********************** principal ***********************/
@@ -119,31 +132,43 @@ video {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    color: var(--color-light); 
-    text-align: center;   
+    color: var(--color-light);
+    text-align: center;
 
-    & h2 {
-        font-size: clamp(20px, 4vw, 40px);
-    }
 
-    & p {
-        width: 60%;
-        text-wrap: balance;
-        line-height: 1.6;
-    }
 }
 
-.btn {
+.principal h2 {
+    font-size: clamp(20px, 4vw, 40px);
+    color: #e7e7e7;
+}
+
+.principal p {
+    width: 60%;
+    text-wrap: balance;
+    line-height: 1.6;
+    color: rgb(234, 210, 210);
+}
+
+.botao {
     border: 3px solid var(--color-blue);
     padding: 8px 30px;
     background-color: var(--color-blue);
     border-radius: 70px;
     transition: background-color var(--transition);
+    color: white;
+    text-decoration:none;
 
-    &:hover {
-        background-color: transparent;
-    }
+
 }
+.botao:hover {
+    background-color: transparent;
+}
+
+.secoes{
+    font-size: 20px;
+}
+
 /*********************** fim principal ***********************/
 .content-section {
     display: flex;
@@ -154,7 +179,6 @@ video {
 }
 
 .content-section .image {
-    flex: 1;
     padding: 20px;
     min-width: 300px;
 }
@@ -178,10 +202,10 @@ video {
 }
 
 .content-section .text p {
-    gap: 10px;
+    /*gap: 10px;*/
     margin: 25px;
-    font-size: 1.2em;
     margin-bottom: 20px;
+    padding: 50px;
     color: black;
 }
 
@@ -201,22 +225,24 @@ video {
 
 #artext {
     font-size: 60px;
-    background: linear-gradient(to left, #001f3f 0%, 
-    #0074D9 20%, 
-    #00BFFF 40%, 
-    #40E0D0 60%, 
-    #00FFFF 70%, 
-    #008080 80%, 
-    #20B2AA 90%, 
-    #00CED1 100%);
+    background: linear-gradient(to left, #001f3f 0%,
+            #012340 20%,
+            #06006e 40%,
+            #0d0081 60%,
+            #011ca1 70%,
+            #2d03b8 80%,
+            #0804f2 90%,
+            #0377eb 100%);
     background-clip: text;
     display: inline;
     color: transparent;
-    animation: animeted 5s linear infinite;
+    animation: animeted 15s linear infinite;
 }
 
 @keyframes animeted {
-    to{background-position-x: 161px ;}
+    to {
+        background-position-x: 161px;
+    }
 }
 
 /*********************** fim segunda pagina ***********************/
@@ -225,6 +251,8 @@ video {
     margin: 10px 0;
     text-align: center;
 }
+
+
 .cont-page3 {
     max-width: 800px;
     margin: 20px auto;
@@ -232,6 +260,7 @@ video {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
 }
 
 .stats {
@@ -267,6 +296,7 @@ video {
     margin-bottom: 15px;
     line-height: 1.6;
 }
+
 /*********************** fim terceira pagina ***********************/
 /*********************** quarta pagina ***********************/
 .solucao-oceana {
@@ -283,13 +313,14 @@ video {
 .solucao-oceana p {
     color: black;
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 
-.solucoes {
+/*.solucoes {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-}
+}*/
 
 .solucao {
     flex: 1;
@@ -297,14 +328,19 @@ video {
     max-width: 300px;
 }
 
-.solucao img {
-    width: 400px;
+/*.solucao img {
     height: auto;
-    border-radius: 10px;
+    width: 400px;
+
+}*/
+
+.solucao img {
+    width: 80%;
+    height: auto;
 }
 
 .solucao h2 {
-    color:var(--color-text);
+    color: var(--color-text);
     margin: 10px 0;
 }
 
@@ -330,10 +366,17 @@ video {
     color: var(--color-text);
 }
 
+.text-objetivo p {
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+
+
 .cards {
-    background-image: linear-gradient( to top, rgba(0, 0, 0, .8), 
-    rgba(0, 0, 0, .3)),
-    url(../images/reciclagem\ card.jpg); ;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8),
+            rgba(0, 0, 0, .3)),
+        url(../images/reciclagem\ card.jpg);
     display: flex;
     justify-content: center;
     width: 350px;
@@ -423,4 +466,5 @@ video {
     margin-top: 10px;
     font-weight: bold;
 }
+
 /*********************** fim sexta pagina ***********************/
